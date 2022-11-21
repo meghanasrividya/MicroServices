@@ -28,14 +28,25 @@ With a microservices architecture, an application is built as independent compon
 ### What is Docker?
 
 - Docker is an open source platform that enables developers to build, deploy, run, update and manage containers—standardized, executable components that combine application source code with the operating system (OS) libraries and dependencies required to run that code in any environment.
+### Why use Docker?
+- Docker is designed to benefit both the Developer and System Administrator. There are the following reasons to use Docker -
 
-### Why use docker?
-- Improved and seamless container portability
-- Even lighter weight and more granular updates
-- Automated container creation
-- Container versioning
-- Container reuse
-- Shared container libraries
+- Docker allows us to easily install and run software without worrying about setup or dependencies.
+- Developers use Docker to eliminate machine problems, i.e. "but code is worked on my laptop." when working on code together with co-workers.
+- Operators use Docker to run and manage apps in isolated containers for better compute density.
+- Enterprises use Docker to securely built agile software delivery pipelines to ship new application features faster and more securely.
+- Since docker is not only used for the deployment, but it is also a great platform for development, that's why we can efficiently increase our customer's satisfaction.
+
+### Advantages of Docker
+- There are the following advantages of Docker -
+
+- It runs the container in seconds instead of minutes.
+- It uses less memory.
+- It provides lightweight virtualization.
+- It does not a require full operating system to run applications.
+- It uses application dependencies to reduce the risk.
+- Docker allows you to use a remote repository to share your container with others.
+- It provides continuous deployment and testing environment.
 
 ### Docker Engine:
 - It is a client server application that contains the following major components.
