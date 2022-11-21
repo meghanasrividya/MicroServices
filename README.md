@@ -55,6 +55,13 @@ With monolithic architectures, all processes are tightly coupled and run as a si
 - A command line interface client.
 
 ![image](https://user-images.githubusercontent.com/97250268/203069350-b7a2321e-016d-4f4d-9fe5-6d350d1d060b.png)
+### Container Life Cyle
+
+![image](https://user-images.githubusercontent.com/97250268/203145264-a1849ddb-6d0b-485f-816b-d99bfa59d178.png)
+
+### Docker Architecture
+
+![image](https://user-images.githubusercontent.com/97250268/203145602-b5b60d02-2956-48fc-be79-e4657c72ee0b.png)
 
 ### Differences between containers and virtual machines
 ![image](https://user-images.githubusercontent.com/97250268/203070410-b44d743e-fdf7-4a02-8225-1323163909e1.png)
