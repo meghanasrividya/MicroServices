@@ -56,3 +56,5 @@ With monolithic architectures, all processes are tightly coupled and run as a si
 
 ![image](https://user-images.githubusercontent.com/97250268/203069350-b7a2321e-016d-4f4d-9fe5-6d350d1d060b.png)
 
+### Differences between containers and virtual machines
+![image](https://user-images.githubusercontent.com/97250268/203070410-b44d743e-fdf7-4a02-8225-1323163909e1.png)
