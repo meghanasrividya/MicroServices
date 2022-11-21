@@ -60,3 +60,33 @@ With monolithic architectures, all processes are tightly coupled and run as a si
 ![image](https://user-images.githubusercontent.com/97250268/203070410-b44d743e-fdf7-4a02-8225-1323163909e1.png)
 
 `alias docker="winpty docker"`
+
+### Docker Commands
+- Docker images: Will present the images available
+- Docker ps: To check the containers running
+- Docker ps -a: To check every container running including hidden files
+- Docker pull: to pull the image from docker hub
+- Docker run : to run the image live directly from dockerhub
+- docker exec -it [container id] bash: to access the running container
+- docker stop: stops a running container
+- docker kill: kills container by stopping execution. stop gives time to shut down gracefully
+- docker commit [container id][username/imagename]: creates new image of an edited container on local system
+- docker rm [container id]:removes container
+- docker history [image name]: to view history
+- docker image rm [image name]: deletes image
+- Making docker docs available on our localhost
+- docker run -d -p 4000:4000 docs/docker.github.io for docker documentation
+- Logging into a running container
+- docker exec -it <container-id/name> sh
+- Port mapping in our containers with localhost
+- docker run -d -p localhost-port:container-port
+- Copying files to container
+- docker cp <container_id>:path/to/file
+- Running a container with ghost
+- docker run -d -p 2368:2368 ghost
+- Running nginx on port 80
+- docker run -d -p 80:80 nginx
+
+/usr/share/nginx/html has nginx web files
+
+can replace index.html to alter website appearance
