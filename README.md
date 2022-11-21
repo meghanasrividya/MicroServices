@@ -87,6 +87,18 @@ With monolithic architectures, all processes are tightly coupled and run as a si
 - Running nginx on port 80
 - docker run -d -p 80:80 nginx
 
-/usr/share/nginx/html has nginx web files
+## Replacing the nginx home page with CV:
 
-can replace index.html to alter website appearance
+- /usr/share/nginx/html has nginx web files
+
+- Can replace index.html to alter website appearance
+- Create index.html of your CV
+- Copy the index.html to the same place/folder where nginx index.html is stored
+- Open your GitBash as admin and give this command `$ docker cp index.html  795c688a6300:/usr/share/nginx/html `, this will copy the index.html from local host to container
+- You can see your CV on browser
+![image](https://user-images.githubusercontent.com/97250268/203118954-d5aabd03-9bbb-4978-8090-f7a7d5a28054.png)
+
+## Build the docker image
+- `$ docker build -t meghanasrividya/my-page:meghana`
+- `$ docker tag nginx meghanasrividya/my-page:meghana`
+
