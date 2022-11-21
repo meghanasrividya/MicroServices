@@ -109,8 +109,11 @@ With monolithic architectures, all processes are tightly coupled and run as a si
 - `$ docker build -t meghanasrividya/my-page:meghana`
 - `$ docker tag nginx meghanasrividya/my-page:meghana`
 - `$ docker commit 795c688a6300 meghanasrividya/my-page:meghana` # creates image in local system
+
+![image](https://user-images.githubusercontent.com/97250268/203122086-3282eaed-f55d-4dd5-bf19-50ec1c582fb1.png)
+
 ## Push to the dockerhub
 
 - `$ docker push meghanasrividya/my-page:meghana`
+![image](https://user-images.githubusercontent.com/97250268/203145845-dca59abe-66a6-41d9-9559-6b597b7c50a8.png)
 
-![image](https://user-images.githubusercontent.com/97250268/203122086-3282eaed-f55d-4dd5-bf19-50ec1c582fb1.png)
