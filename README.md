@@ -115,5 +115,7 @@ With monolithic architectures, all processes are tightly coupled and run as a si
 ## Push to the dockerhub
 
 - `$ docker push meghanasrividya/my-page:meghana`
+
+
 ![image](https://user-images.githubusercontent.com/97250268/203145845-dca59abe-66a6-41d9-9559-6b597b7c50a8.png)
 
