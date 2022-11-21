@@ -58,3 +58,5 @@ With monolithic architectures, all processes are tightly coupled and run as a si
 
 ### Differences between containers and virtual machines
 ![image](https://user-images.githubusercontent.com/97250268/203070410-b44d743e-fdf7-4a02-8225-1323163909e1.png)
+
+`alias docker="winpty docker"`
