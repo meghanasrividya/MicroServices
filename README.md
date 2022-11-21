@@ -37,4 +37,11 @@ With a microservices architecture, an application is built as independent compon
 - Container reuse
 - Shared container libraries
 
+### Docker Engine:
+- It is a client server application that contains the following major components.
+- A server which is a type of long-running program called a daemon process.
+- The REST API is used to specify interfaces that programs can use to talk to the daemon and instruct it what to do.
+- A command line interface client.
+
+![image](https://user-images.githubusercontent.com/97250268/203069350-b7a2321e-016d-4f4d-9fe5-6d350d1d060b.png)
 
