@@ -273,4 +273,8 @@ CMD ["npm", "start"]
  
  - To Build the image use the command `$ docker build -t meghanasrividya/eng130-nodeapp .` 
  - To run the image use the command `$ docker run -d -p 3000:3000 meghanasrividya/eng130-nodeapp`
+ - We can see the app running at `localhost:3000` in browser
+ 
+ ![image](https://user-images.githubusercontent.com/97250268/203329362-ac1a22ee-c5f1-4d85-ad77-9d3e3d71df2f.png)
+
  - To push to the docker hub `$ docker push meghanasrividya/eng130-nodeapp`
