@@ -152,3 +152,29 @@ CMD ["nginx", "-g", "daemon off;"]
 
 
 ```
+## Node App Task
+- Create a new folder and copy app and environment folders inside
+- `mkdir eng130-node`
+- Create the Dockirfile `nano Dockerfile` and add the below script
+ ```
+ FROM nginx
+LABEL MAINTAINER=Meghana
+COPY app/ /home/
+EXPOSE 80
+EXPOSE 3000
+RUN apt-get update
+RUN apt-get install -y
+RUN apt-get install software-properties-common -y
+RUN apt-get install npm -y
+CMD ["nginx", "-g", "daemon off;"]
+WORKDIR /home/app
+RUN npm install
+CMD ["npm", "start"]
+
+
+
+ ```
+ 
+ - To Build the image use the command `$ docker build -t meghanasrividya/eng130-nodeapp .` 
+ - To run the image use the command `$ docker run -d -p 3000:3000 meghanasrividya/eng130-nodeapp`
+ - To push to the docker hub `$ docker push meghanasrividya/eng130-nodeapp`
