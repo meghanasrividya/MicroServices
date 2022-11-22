@@ -38,7 +38,7 @@ With monolithic architectures, all processes are tightly coupled and run as a si
 - Since docker is not only used for the deployment, but it is also a great platform for development, that's why we can efficiently increase our customer's satisfaction.
 
 ### Advantages of Docker
-- There are the following advantages of Docker -
+- These are the following advantages of Docker -
 
 - It runs the container in seconds instead of minutes.
 - It uses less memory.
