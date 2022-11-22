@@ -278,3 +278,44 @@ CMD ["npm", "start"]
  ![image](https://user-images.githubusercontent.com/97250268/203329362-ac1a22ee-c5f1-4d85-ad77-9d3e3d71df2f.png)
 
  - To push to the docker hub `$ docker push meghanasrividya/eng130-nodeapp`
+
+## What is Docker Compose?
+
+- Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application's services.
+
+## Create a .yml file with docker-compose to launch our app with mongodb
+
+- `nano docker-compose.yml` 
+
+```
+version: '3'
+
+services:
+  # start the db image and map to port 27017
+  db:
+    image: mongo
+    restart: always
+    ports: [27017:27017]
+    volumes:
+    - data-volume:/data/db
+    - ./mongod.conf:/etc/mongod.conf
+
+  web:
+    # start up the web app image and map to localhost
+    build: ./app
+    restart: always
+    ports: [80:3000]
+    # set variable for a db port
+    environment:
+      - DB_HOST=mongodb://db:27017/posts
+    depends_on:
+      - db
+    volumes:
+    - ./app:/src/app
+    # could also use links
+    # can run the seeds here if CMD doesn't work
+     
+    
+volumes:
+  data-volume:
+```
