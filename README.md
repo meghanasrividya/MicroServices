@@ -218,6 +218,7 @@ Commands:
 ![image](https://user-images.githubusercontent.com/97250268/203145845-dca59abe-66a6-41d9-9559-6b597b7c50a8.png)
 
 ## Automate the process of building image
+- Create the Dockerfile at the same location as your index.html
 ```
 # docker run nginx
 
