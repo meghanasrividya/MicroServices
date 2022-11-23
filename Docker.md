@@ -292,3 +292,5 @@ services:
 volumes:
   data-volume:
 ```
+- To docker build `docker-compose up -d --build`
+- To seed the database `winpty docker exec -it $(docker ps -l --format "{{.ID}}") node seeds/seed.js`
